@@ -1,10 +1,10 @@
 #include "LiczbaDwojkowaCalkowita.h"
 
-LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::dzisietnaNaDwojkowa(int dziesietna)
+LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::naDwojkowa(int dziesietna)
 {
 
 }
-int LiczbaDwojkowaCalkowita::dwojkowaNaDziesietna(LiczbaDwojkowaCalkowita dwojkowa)
+int LiczbaDwojkowaCalkowita::naDziesietna(LiczbaDwojkowaCalkowita dwojkowa)
 {
 
 }
