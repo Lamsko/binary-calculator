@@ -19,6 +19,8 @@ int main()
 	LiczbaDwojkowaCalkowita liczbaDwojkowa;
 	liczbaDwojkowa.intToBin(n);
 	liczbaDwojkowa.write();
+	LiczbaDwojkowaCalkowita liczbaDwojkowa2(56);
+	liczbaDwojkowa2.write();
     
 	return 0;
 }
