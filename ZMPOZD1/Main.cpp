@@ -7,6 +7,7 @@
 
 #include "LiczbaDwojkowaCalkowita.h"
 
+
 using namespace std;
 
 
@@ -16,6 +17,7 @@ int main()
 	int n;
 	cin >> n;
 	LiczbaDwojkowaCalkowita liczbaDwojkowa;
+	liczbaDwojkowa.intToBin(n);
 	liczbaDwojkowa.write();
     
 	return 0;

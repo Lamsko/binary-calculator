@@ -10,17 +10,21 @@ LiczbaDwojkowaCalkowita::LiczbaDwojkowaCalkowita()
 	}
 }
 
-LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::intToBin(int decimal)
+LiczbaDwojkowaCalkowita::LiczbaDwojkowaCalkowita(int n)
+{
+}
+
+void LiczbaDwojkowaCalkowita::intToBin(int decimal)
 {
 	LiczbaDwojkowaCalkowita binary;
+	int i = 7;
 	while (decimal > 0)
-	{
-		int i = 0;
+	{		
 		tablica[i] = decimal % 2;
-		i++;
+		i--;
 		decimal = decimal / 2;
 	}
-	return binary;
+	//return binary;
 }
 void LiczbaDwojkowaCalkowita::write()
 {

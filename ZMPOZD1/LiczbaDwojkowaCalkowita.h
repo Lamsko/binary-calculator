@@ -8,8 +8,9 @@ class LiczbaDwojkowaCalkowita
 {
 public:
 	LiczbaDwojkowaCalkowita();
-	LiczbaDwojkowaCalkowita intToBin(int dziesietna);
+	LiczbaDwojkowaCalkowita(int n);
+	void intToBin(int dziesietna);
 	void write();
 private:
-	int tablica[10];
+	int tablica[8];
 };
