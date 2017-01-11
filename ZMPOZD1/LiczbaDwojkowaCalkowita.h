@@ -8,11 +8,8 @@ class LiczbaDwojkowaCalkowita
 {
 public:
 	LiczbaDwojkowaCalkowita();
-	LiczbaDwojkowaCalkowita naDwojkowa(int dziesietna);
-	//int naDziesietna(LiczbaDwojkowaCalkowita dwojkowa);
-	//string zamienNaNapis(LiczbaDwojkowaCalkowita dwojkowa);
-	//LiczbaDwojkowaCalkowita przypisz(LiczbaDwojkowaCalkowita dwojkowa);
-	void wypiszDwojkowa();
+	LiczbaDwojkowaCalkowita intToBin(int dziesietna);
+	void write();
 private:
 	int tablica[10];
 };

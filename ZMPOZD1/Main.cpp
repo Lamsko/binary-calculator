@@ -16,11 +16,8 @@ int main()
 	int n;
 	cin >> n;
 	LiczbaDwojkowaCalkowita liczbaDwojkowa;
-	liczbaDwojkowa.naDwojkowa(n);
-	liczbaDwojkowa.wypiszDwojkowa();
-	//cout << n << endl;
+	liczbaDwojkowa.write();
     
-	system("PAUSE");
 	return 0;
 }
 

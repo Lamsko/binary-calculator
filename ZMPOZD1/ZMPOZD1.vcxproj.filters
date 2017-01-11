@@ -32,10 +32,10 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ZMPOZD1.cpp">
+    <ClCompile Include="LiczbaDwojkowaCalkowita.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LiczbaDwojkowaCalkowita.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -10,34 +10,23 @@ LiczbaDwojkowaCalkowita::LiczbaDwojkowaCalkowita()
 	}
 }
 
-LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::naDwojkowa(int dziesietna)
+LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::intToBin(int decimal)
 {
-	LiczbaDwojkowaCalkowita dwojkowa;
-	while (dziesietna > 0)
+	LiczbaDwojkowaCalkowita binary;
+	while (decimal > 0)
 	{
 		int i = 0;
-		tablica[i] = dziesietna % 2;
+		tablica[i] = decimal % 2;
 		i++;
-		dziesietna = dziesietna / 2;
+		decimal = decimal / 2;
 	}
-	return dwojkowa;
+	return binary;
 }
-void LiczbaDwojkowaCalkowita::wypiszDwojkowa()
+void LiczbaDwojkowaCalkowita::write()
 {
 	for (int i = 0; i < sizeof(tablica) / sizeof(*tablica); i++)
 	{
 		cout << tablica[i];
 	}
+	cout << endl;
 }
-//int LiczbaDwojkowaCalkowita::naDziesietna(LiczbaDwojkowaCalkowita dwojkowa)
-//{
-//
-//}
-//string LiczbaDwojkowaCalkowita::zamienNaNapis(LiczbaDwojkowaCalkowita dwojkowa) 
-//{
-//
-//}
-//LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::przypisz(LiczbaDwojkowaCalkowita dwojkowa)
-//{
-//
-//}
