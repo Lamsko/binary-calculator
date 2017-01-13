@@ -25,6 +25,10 @@ int main()
 	cout << liczbaDwojkowa2.binToString() << endl;
 	cout << liczbaDwojkowa.binToInt() << endl;
 	cout << liczbaDwojkowa2.binToInt() << endl;
+	
+	liczbaDwojkowa2.copy(liczbaDwojkowa);
+	cout << liczbaDwojkowa.binToString() << endl;
+	cout << liczbaDwojkowa2.binToString() << endl;
     
 	return 0;
 }

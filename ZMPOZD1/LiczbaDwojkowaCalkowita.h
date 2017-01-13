@@ -13,6 +13,8 @@ public:
 	void intToBin(int dziesietna);
 	int binToInt();
 	string binToString();
+	int get(int i);
+	void copy(LiczbaDwojkowaCalkowita dwojkowa);
 	void write();
 private:
 	int tab[BITS];

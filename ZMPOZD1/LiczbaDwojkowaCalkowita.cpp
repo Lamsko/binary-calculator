@@ -63,6 +63,20 @@ string LiczbaDwojkowaCalkowita::binToString()
 	return str;
 }
 
+int LiczbaDwojkowaCalkowita::get(int i)
+{
+	return tab[i];
+}
+
+void LiczbaDwojkowaCalkowita::copy(LiczbaDwojkowaCalkowita dwojkowa)
+{
+	for (int i = 0; i < BITS; i++)
+	{
+		tab[i] = dwojkowa.get(i);
+	}
+}
+
+
 void LiczbaDwojkowaCalkowita::write()
 {
 	for (int i = 0; i < sizeof(tab) / sizeof(*tab); i++)
