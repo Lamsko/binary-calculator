@@ -43,7 +43,14 @@ void LiczbaDwojkowaCalkowita::intToBin(int decimal)
 
 int LiczbaDwojkowaCalkowita::binToInt()
 {
-	return 0;
+	int dec = 0;
+	int multi = 1;
+	for (int i = BITS - 1; i >= 0; i--)
+	{
+		dec += tab[i] * multi;
+		multi *= 2;
+	}
+	return dec;
 }
 
 string LiczbaDwojkowaCalkowita::binToString()

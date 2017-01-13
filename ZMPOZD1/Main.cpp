@@ -23,6 +23,8 @@ int main()
 	liczbaDwojkowa2.write();
 	cout << liczbaDwojkowa.binToString() << endl;
 	cout << liczbaDwojkowa2.binToString() << endl;
+	cout << liczbaDwojkowa.binToInt() << endl;
+	cout << liczbaDwojkowa2.binToInt() << endl;
     
 	return 0;
 }
