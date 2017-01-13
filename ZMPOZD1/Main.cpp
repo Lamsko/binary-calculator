@@ -21,14 +21,16 @@ int main()
 	liczbaDwojkowa.write();
 	LiczbaDwojkowaCalkowita liczbaDwojkowa2(97);
 	liczbaDwojkowa2.write();
-	cout << liczbaDwojkowa.binToString() << endl;
-	cout << liczbaDwojkowa2.binToString() << endl;
+	cout << liczbaDwojkowa.toString() << endl;
+	cout << liczbaDwojkowa2.toString() << endl;
 	cout << liczbaDwojkowa.binToInt() << endl;
 	cout << liczbaDwojkowa2.binToInt() << endl;
 	
 	liczbaDwojkowa2.copy(liczbaDwojkowa);
-	cout << liczbaDwojkowa.binToString() << endl;
-	cout << liczbaDwojkowa2.binToString() << endl;
+	cout << liczbaDwojkowa.toString() << endl;
+	cout << liczbaDwojkowa2.toString() << endl;
+
+	cout << liczbaDwojkowa.add(liczbaDwojkowa2).toString() << endl;
     
 	return 0;
 }

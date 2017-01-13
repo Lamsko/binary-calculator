@@ -53,7 +53,7 @@ int LiczbaDwojkowaCalkowita::binToInt()
 	return dec;
 }
 
-string LiczbaDwojkowaCalkowita::binToString()
+string LiczbaDwojkowaCalkowita::toString()
 {
 	string str = "";
 	for (int i = 0; i < BITS; i++)
@@ -84,4 +84,16 @@ void LiczbaDwojkowaCalkowita::write()
 		cout << tab[i];
 	}
 	cout << endl;
+}
+
+LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::add(LiczbaDwojkowaCalkowita bin)
+{
+	LiczbaDwojkowaCalkowita sum;
+	int carry = 0;	
+	for (int i = BITS - 1; i >= 0; i--)
+	{
+		sum.tab[i] = ((tab[i] ^ bin.get(i)) ^ carry);
+		carry = ((tab[i] & bin.get(i)) | (tab[i] & carry)) | (bin.get(i) & carry);
+	}
+	return sum;
 }

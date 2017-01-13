@@ -12,10 +12,13 @@ public:
 	LiczbaDwojkowaCalkowita(int n);
 	void intToBin(int dziesietna);
 	int binToInt();
-	string binToString();
+	string toString();
 	int get(int i);
 	void copy(LiczbaDwojkowaCalkowita dwojkowa);
 	void write();
+
+	LiczbaDwojkowaCalkowita add(LiczbaDwojkowaCalkowita bin);
+	LiczbaDwojkowaCalkowita sub(LiczbaDwojkowaCalkowita bin);
 private:
 	int tab[BITS];
 };
