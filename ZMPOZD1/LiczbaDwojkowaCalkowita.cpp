@@ -72,7 +72,7 @@ void LiczbaDwojkowaCalkowita::copy(LiczbaDwojkowaCalkowita dwojkowa)
 {
 	for (int i = 0; i < BITS; i++)
 	{
-		tab[i] = dwojkowa.get(i);
+		tab[i] = dwojkowa.tab[i];
 	}
 }
 
@@ -92,8 +92,24 @@ LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::add(LiczbaDwojkowaCalkowita bin
 	int carry = 0;	
 	for (int i = BITS - 1; i >= 0; i--)
 	{
-		sum.tab[i] = ((tab[i] ^ bin.get(i)) ^ carry);
-		carry = ((tab[i] & bin.get(i)) | (tab[i] & carry)) | (bin.get(i) & carry);
+		sum.tab[i] = ((tab[i] ^ bin.tab[i]) ^ carry);
+		carry = ((tab[i] & bin.tab[i]) | (tab[i] & carry)) | (bin.tab[i] & carry);
 	}
 	return sum;
+}
+
+LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::sub(LiczbaDwojkowaCalkowita bin)
+{
+	LiczbaDwojkowaCalkowita sub;
+	int carry = 0;
+	for (int i = BITS - 1; i >= 0; i--)
+	{
+		sub.tab[i] = tab[i] - bin.tab[i];
+		if (sub.tab[i] < 0)
+		{
+			tab[i - 1] = tab[i - 1] - 1;
+		}
+		sub.tab[i] = abs(sub.tab[i] % 2);
+	}
+	return sub;
 }

@@ -29,8 +29,13 @@ int main()
 	liczbaDwojkowa2.copy(liczbaDwojkowa);
 	cout << liczbaDwojkowa.toString() << endl;
 	cout << liczbaDwojkowa2.toString() << endl;
+	LiczbaDwojkowaCalkowita liczbaDwojkowa3(98);
 
 	cout << liczbaDwojkowa.add(liczbaDwojkowa2).toString() << endl;
+	cout << "\n";
+	cout << liczbaDwojkowa3.toString() << endl;
+	cout << liczbaDwojkowa2.toString() << endl;
+	cout << liczbaDwojkowa3.sub(liczbaDwojkowa2).toString() << endl;
     
 	return 0;
 }
