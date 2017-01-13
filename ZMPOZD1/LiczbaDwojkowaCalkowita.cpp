@@ -2,6 +2,8 @@
 #include "LiczbaDwojkowaCalkowita.h"
 #include <iostream>
 
+
+
 LiczbaDwojkowaCalkowita::LiczbaDwojkowaCalkowita()
 {
 	for (int i = 0; i < sizeof(tablica) / sizeof(*tablica); i++)
@@ -18,7 +20,7 @@ LiczbaDwojkowaCalkowita::LiczbaDwojkowaCalkowita(int n)
 		tablica[i] = 0;
 	}
 
-	int i = 7;
+	int i = BITS - 1;
 	while (n > 0)
 	{
 		tablica[i] = n % 2;

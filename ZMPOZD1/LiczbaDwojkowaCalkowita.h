@@ -3,6 +3,7 @@
 
 using namespace std;
 
+const int BITS{ 8 };
 
 class LiczbaDwojkowaCalkowita
 {
@@ -12,5 +13,5 @@ public:
 	void intToBin(int dziesietna);
 	void write();
 private:
-	int tablica[8];
+	int tablica[BITS];
 };
