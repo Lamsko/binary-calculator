@@ -11,7 +11,9 @@ public:
 	LiczbaDwojkowaCalkowita();
 	LiczbaDwojkowaCalkowita(int n);
 	void intToBin(int dziesietna);
+	int binToInt();
+	string binToString();
 	void write();
 private:
-	int tablica[BITS];
+	int tab[BITS];
 };

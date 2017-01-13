@@ -19,8 +19,10 @@ int main()
 	LiczbaDwojkowaCalkowita liczbaDwojkowa;
 	liczbaDwojkowa.intToBin(n);
 	liczbaDwojkowa.write();
-	LiczbaDwojkowaCalkowita liczbaDwojkowa2(56);
+	LiczbaDwojkowaCalkowita liczbaDwojkowa2(97);
 	liczbaDwojkowa2.write();
+	cout << liczbaDwojkowa.binToString() << endl;
+	cout << liczbaDwojkowa2.binToString() << endl;
     
 	return 0;
 }
