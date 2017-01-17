@@ -13,7 +13,7 @@ public:
 	void intToBin(int dziesietna);
 	int binToInt();
 	string toString();
-	int get(int i);
+	//int get(int i);
 	void copy(LiczbaDwojkowaCalkowita dwojkowa);
 	void write();
 

@@ -63,10 +63,10 @@ string LiczbaDwojkowaCalkowita::toString()
 	return str;
 }
 
-int LiczbaDwojkowaCalkowita::get(int i)
-{
-	return tab[i];
-}
+//int LiczbaDwojkowaCalkowita::get(int i)
+//{
+//	return tab[i];
+//}
 
 void LiczbaDwojkowaCalkowita::copy(LiczbaDwojkowaCalkowita dwojkowa)
 {
