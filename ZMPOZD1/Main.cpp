@@ -14,7 +14,7 @@ using namespace std;
 int main()
 {	
 	cout << "Podaj calkowita liczbe dziesietna: " << endl;
-	int n;
+	long int n;
 	cin >> n;
 	LiczbaDwojkowaCalkowita liczbaDwojkowa;
 	liczbaDwojkowa.intToBin(n);
