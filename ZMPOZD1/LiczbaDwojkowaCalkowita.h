@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int BITS{ 8 };
+const int BITS{ 64 };
 
 class LiczbaDwojkowaCalkowita
 {
@@ -19,6 +19,8 @@ public:
 
 	LiczbaDwojkowaCalkowita add(LiczbaDwojkowaCalkowita bin);
 	LiczbaDwojkowaCalkowita sub(LiczbaDwojkowaCalkowita bin);
+	void shiftRigt();
+	void shifLeft();
 private:
 	int tab[BITS];
 };

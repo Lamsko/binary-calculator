@@ -32,7 +32,7 @@ LiczbaDwojkowaCalkowita::LiczbaDwojkowaCalkowita(int n)
 void LiczbaDwojkowaCalkowita::intToBin(int decimal)
 {
 	
-	int i = 7;
+	int i = BITS - 1;
 	while (decimal > 0)
 	{		
 		tab[i] = decimal % 2;
@@ -112,4 +112,24 @@ LiczbaDwojkowaCalkowita LiczbaDwojkowaCalkowita::sub(LiczbaDwojkowaCalkowita bin
 		sub.tab[i] = abs(sub.tab[i] % 2);
 	}
 	return sub;
+}
+
+void LiczbaDwojkowaCalkowita::shiftRigt()
+{
+	int temp = tab[BITS-1];
+	for (int i = BITS - 1; i >= 0; i--)
+	{
+		tab[i] = tab[i - 1];
+	}
+	tab[0] = temp;
+}
+
+void LiczbaDwojkowaCalkowita::shifLeft()
+{
+	int temp = tab[0];
+	for (int i = 0; i < BITS; i++)
+	{
+		tab[i] = tab[i + 1];
+	}
+	tab[BITS - 1] = temp;
 }
